@@ -1,3 +1,18 @@
+#####Brackets
+.brackets.json
+
+
+
+#####VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+
+
+#####Node
 # Logs
 logs
 *.log
