@@ -1,0 +1,48 @@
+{
+	"name": "projet",
+	"version": "1.0.0",
+	"description": "Projet de Web Client de DUT Info 2",
+	"main": "",
+	"scripts": {
+		"setup": "npm i && npm up",
+		"prodBuild": "webpack --mode production --progress --colors",
+		"build": "webpack --mode development --progress --colors",
+		"watch": "webpack --mode development --progress --colors --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Voltra/proj_web_client.git"
+	},
+	"keywords": [],
+	"author": {
+		"name": "Ludwig GUERIN",
+		"email": "ludwig.guerin@etu.univ-nantes.fr"
+	},
+	"contributors": [
+		{
+			"name": "Ludwig GUERIN",
+			"email": "ludwig.guerin@etu.univ-nantes.fr"
+		}
+	],
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Voltra/proj_web_client/issues"
+	},
+	"homepage": "https://github.com/Voltra/proj_web_client#readme",
+	"devDependencies": {
+		"babel-loader": "^7.1.4",
+		"babel-plugin-transform-function-bind": "^6.22.0",
+		"babel-preset-env": "^1.6.1",
+		"clean-webpack-plugin": "^0.1.19",
+		"css-loader": "^0.28.11",
+		"file-loader": "^1.1.11",
+		"style-loader": "^0.20.3",
+		"webpack": "^4.2.0",
+		"webpack-cli": "^2.0.12",
+		"webpack-jquery-ui": "^1.0.0"
+	},
+	"dependencies": {
+		"jquery": "^3.3.1",
+		"jquery-ui": "^1.12.1"
+	}
+}
