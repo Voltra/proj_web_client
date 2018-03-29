@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: r;
+}
+
+body{
+    position: relative;
+    display: block;
+        
+    width: 100vw;
+    height: 100vh;
+    
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#app{
+    width: 100vw;
+    min-height: 100vh;
+    height: 100vh;/*auto;*/
+    
+    overflow-x: hidden;
+    position: relative;
+    
+    padding: 2vh;
+}
+
+#search{
+    width: calc(100vw - (2 * 2vh));
+    height: calc(10vh - 2vh);
+    
+    position: relative;
+    display: block;
+}
+
+.flexible {
+	width: 100%;/*auto;*/
+    height: 100%;/*auto;*/
+    
+    position: absolute;
+    left: 50%;
+    
+    transform: translateX(-50%);
+}
+
+#search  [type]{
+	display: inline-block;
+    height: calc(10vh - (2 * 2vh));
+}
+
+/*#search input{
+    width: calc((100% / 4) - 2vh);
+}*/
+
+/*#search [type]:not(#search [type]:first-child){
+	margin-left: 2vh;
+}*/
+
+#search #complete{
+	width: 30%;
+	margin-left: calc(25% - (2 * 1em));
+}
+
+#search [name="amount"]{
+	width: 20%;
+}
+
+/*#search [type="submit"]{
+    border: none;
+    padding: 0;
+}*/
+
+#tabs{
+    width: calc(100vw - (2 * 2vh));
+    height: calc(90vh - 2vh);
+    overflow-y: auto;
+}
+
+#vueGrille .item{
+    display: inline-block;
+    padding: 1vw;
+}
+
+#vueTable tr.odd{
+    background-color: white;
+    color: black;
+}
+
+#vueTable tr.even{
+    background-color: rgba(0,0,0, 0.15);
+    color: black;
+}
+
+#vueTable tr td{
+    vertical-align: middle;
+}
+
+/*********************************************************************************************************************************\
+    https://stackoverflow.com/questions/10561841/how-to-center-align-jquery-ui-tabs-with-screenshot#answers-header
+\*********************************************************************************************************************************/
+/* .centered .ui-tabs-nav {
+    height: 2.35em;
+    text-align: center;
+}
+.centered .ui-tabs-nav li {
+    display: inline-block;
+    float: none;
+    margin: 0em;
+} */
+.centered.ui-tabs .ui-tabs-nav {
+    text-align: center;
+}
+
+.centered.ui-tabs .ui-tabs-nav li,
+.centered.ui-tabs .ui-tabs-nav li.ui-state-active{
+    float: none !important;
+    display: inline-block;
+    margin-bottom: -5px;
+}

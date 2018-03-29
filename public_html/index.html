@@ -17,10 +17,47 @@
         <link rel="stylesheet" href="assets/css/globals/clear_float.css" data-whatIdo="Styles pour élément rétablissant le flot"/>
         <link rel="stylesheet" href="assets/css/globals/font_loader.css" data-whatIdo="Préparation des polices de caractères"/>
         
+        <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css" data-whatIdo="Charge une police d'icônes"/>
+        <link rel="stylesheet" href="assets/css/main.css" data-whatIdo="Styles de la page"/>
+        <link rel="stylesheet" href="assets/css/libs/flash.css" data-whatIdo="Styles des messages flash"/>
+        <link rel="stylesheet" href="assets/css/libs/fancybox.min.css" data-whatIdo="Styles les galeries modales"/>
+        <link rel="stylesheet" href="assets/css/libs/dataTables.min.css" data-whatIdo="Styles les tableaux jQuery via DataTables"/>
+        
         <!--@@ BUNDLE @@-->
         <script src="assets/js/index.bundle.js" data-whatIdo="Chargement des scripts de la page"></script>
+        <script src="assets/js-libs/fancybox.min.js" data-whatIdo="Chargement de fancybox (modales)"></script>
+        <script src="assets/js-libs/row-grid.min.js" data-whatIdo="Chargement de fancybox (modales)"></script>
     </head>
     
     <body>
+        <div id="app">
+            <form id="search" action="" method="GET">
+                <div class="flexible">
+                    <input value="" name="complete" id="complete" type="text" placeholder="rechercher ..."/>
+                    <input value="1" name="amount" type="number" min="1" max="100"/>
+                    <button type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div id="tabs" class="centered">
+                <ul>
+                    <li>
+                        <a href="#vueGrille">
+                            <i class="fa fa-th-large" aria-hidden="true"></i> Grille
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#vueTable">
+                            <!-- <i class="fa fa-address-card-o" aria-hidden="true"></i> Tableau -->
+                            <i class="fa fa-th-list" aria-hidden="true"></i> Tableau
+                        </a>
+                    </li>
+                </ul>
+                <div id="vueGrille"></div>
+                <div id="vueTable"></div>
+            </div>
+        </div>
     </body>
 </html>

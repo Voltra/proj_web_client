@@ -1,0 +1,25 @@
+{
+    "form": "#search",
+    "autocomplete": {
+        "container": "#complete",
+        "minLength": 3,
+        "maxRows": 24
+    },
+    "tabs": {
+        "container": "#tabs",
+        "grid": "#vueGrille",
+        "table": "#vueTable"
+    },
+    "rawTableID": "table",
+    "rawTableSelector": "#table",
+    "galleries": {
+        "grid": "grid-gallery",
+        "table": "table-gallery"
+    },
+    "headers": [
+        "Photo",
+        "Intitulé",
+        "Date de prise de vue",
+        "Pseudonyme"
+    ]
+}

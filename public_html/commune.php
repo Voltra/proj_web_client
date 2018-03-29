@@ -14,7 +14,9 @@ $list = array();
 try
 // remplacer par vos identifiants, la Bd est disponible dans l'archive serveur.tar.gz du TP ajax
 {
-    $db = new PDO('mysql:host=localhost;dbname=XXXXXXX', 'XXXXXXXX', 'XXXXXX');
+    //$db = new PDO('mysql:host=localhost;dbname=XXXXX', 'XXXXX', 'XXXXX');
+    //$db = new PDO('mysql:host=localhost;dbname=webclient', 'E164626R', 'E164626R');
+    $db = new PDO('mysql:host=localhost;dbname=webclient', 'root', '');
     $db->exec("SET CHARACTER SET utf8");
 }
 catch (Exception $ex)

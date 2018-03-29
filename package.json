@@ -42,7 +42,12 @@
 		"webpack-jquery-ui": "^1.0.0"
 	},
 	"dependencies": {
+		"@fancyapps/fancybox": "^3.2.5",
+		"datatables": "^1.10.13",
+		"flickr-sdk": "^3.7.0",
+		"jq-flash": "^1.0.2",
 		"jquery": "^3.3.1",
-		"jquery-ui": "^1.12.1"
+		"jquery-ui": "^1.12.1",
+		"rowgrid.js": "^1.1.0"
 	}
 }
