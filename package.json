@@ -2,7 +2,7 @@
 	"name": "projet",
 	"version": "1.0.0",
 	"description": "Projet de Web Client de DUT Info 2",
-	"main": "",
+	"main": "dev/js/index.js",
 	"scripts": {
 		"setup": "npm i && npm up",
 		"prodBuild": "webpack --mode production --progress --colors",

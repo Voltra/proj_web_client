@@ -74,10 +74,20 @@ body{
     width: calc(100vw - (2 * 2vh));
     height: calc(90vh - 2vh);
     overflow-y: auto;
+    position: relative;
+}
+
+#vueGrille{
+    display: flex;
+    flex-wrap: wrap;
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #vueGrille .item{
-    display: inline-block;
+    /*display: inline-block;*/
     padding: 1vw;
 }
 
@@ -92,6 +102,7 @@ body{
 }
 
 #vueTable tr td{
+    text-align: center;
     vertical-align: middle;
 }
 

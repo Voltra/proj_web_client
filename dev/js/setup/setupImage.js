@@ -18,9 +18,12 @@ function makeImage(photo, urls, galleryIdentifier){
     //1 -> Large Square
     //7 -> Large
     const url = urls[1].source
+    const {width, height} = urls[1];
     $(`<img src='${url}'></img>`, {
         "data-content": JSON.stringify(photo),
-        "alt": "img"
+        "alt": "img",
+        width,
+        height
     }).appendTo($a);
     return $a;
 }
@@ -83,10 +86,10 @@ export function resetGrid(config){
     const $gridTab = $(config.tabs.grid);
     $gridTab.empty();
     $gridTab.rowGrid({
-        itemSelector: ".item",
+        itemSelector: `${config.tabs.grid} .item`,
         minMargin: 10,
         maxMargin: 35,
-        resize: false,
+        resize: true,
         lastRowGrid: "last-row",
         firstItemClass: "first-item"
     });
@@ -101,11 +104,12 @@ export function resetGrid(config){
 function setupGrid(config, photo, urls){
     const $grid = $(config.tabs.grid);
     const $a = makeGridImage(photo, urls, config);
-    $a.data("caption", `${photo.title._content} | ${photo.owner.username} | ${photo.dates.taken}`);
+    $a.data("caption", `<u>Intitulé:</u>&nbsp;${photo.title._content} | <u>Pseudo:</u>&nbsp;${photo.owner.username} | <u>Date:</u>&nbsp;${photo.dates.taken}`);
     $a.fancybox({
         protect: true
     });
     $a.appendTo("<div class='item'></div>").parent().appendTo($grid);
+    $grid.rowGrid("appended");
 }
 
 /**
